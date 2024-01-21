@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rbooto", sans-serif;
+}
+* body {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(37, 37, 40) 53%, rgb(10, 22, 24) 100%);
+}
+* body .content {
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+}
+* body .content h5 {
+  color: rgb(178, 168, 168);
+}
+* body .content .sidebar {
+  height: 100%;
+}
+* body .content .sidebar .menu {
+  background-color: rgb(26, 24, 29);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+* body .content .sidebar .menu .menu-title h5 {
+  padding-top: 17px;
+  margin-left: 5px;
+}
+* body .content .sidebar .menu .menu-item h5 {
+  margin-top: 60px;
+  margin-left: 10px;
+}
+* body .content .sidebar .menu .menu-item li {
+  margin-left: 20px;
+  text-decoration: none;
+  list-style: none;
+}
+* body .content .sidebar .menu .menu-item a {
+  color: rgb(94, 78, 124);
+  transform: all ease 2s;
+}
+* body .content .sidebar .menu .menu-item a:hover {
+  text-decoration: none;
+  color: rgb(36, 36, 49);
+  transform: all ease 2s;
+}
+* body .content main header {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+* body .content main header .nav-links {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+* body .content main header .nav-links a {
+  margin-right: 10px;
+  color: rgb(181, 175, 175);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+* body .content main header .nav-links a:hover {
+  color: rgb(255, 255, 255);
+}
+* body .content main header .search {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 65%;
+  background-color: rgba(29, 29, 29, 0.1137254902);
+  border: 1px solid #464748;
+  padding: 10px;
+  border-radius: 8px;
+}
+* body .content main header .search a {
+  color: #fff;
+  text-decoration: none;
+}
+* body .content main header .search a:hover {
+  color: #32393f;
+}
+* body .content main header .search input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+* body .content main .trending {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+* body .content main .trending img {
+  width: 300px;
+  height: 200px;
+  border-radius: 3%;
+}
+* body .content main .trending .left {
+  margin-left: 10px;
+}
+* body .content main .trending .left .info {
+  margin-top: 12px;
+  padding: 26px;
+}
+* body .content main .trending .left .info h2 {
+  font-size: 56px;
+  margin-bottom: 8px;
+}
+* body .content main .trending .left .info h4, * body .content main .trending .left .info h5 {
+  display: inline;
+}
+* body .content main .trending .left .info h5 {
+  margin-left: 12px;
+  color: #919191;
+}
+* body .content main .trending .left .info .buttons {
+  display: flex;
+  margin-top: 10px;
+}
+* body .content main .trending .left .info .buttons button {
+  width: 200px;
+  height: 45px;
+  border-radius: 3%;
+}
+* body .content main .trending .left .info .buttons i {
+  margin-left: 30px;
+}
+* body .content main .trending .left .info .buttons i:hover {
+  color: rgb(119, 9, 9);
+}
+* body .content main .playlist {
+  display: flex;
+}
+* body .content main .playlist .genre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(66, 61, 73, 0.437);
+  width: 280px;
+  height: 61%;
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  border-radius: 1.5%;
+  color: white;
+}
+* body .content main .playlist .genre .title-genre {
+  display: flex;
+  justify-content: space-between;
+}
+* body .content main .playlist .genre .title-genre h1 {
+  margin-top: 20px;
+}
+* body .content main .playlist .genre .title-genre h5 {
+  margin-top: 35px;
+  padding-left: 50px;
+}
+* body .content main .playlist .genre .title-genre h5:hover {
+  color: white;
+  cursor: pointer;
+}
+* body .content main .playlist .genre .chill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 150px;
+  border-radius: 3%;
+  background-color: rgb(255, 168, 7);
+  margin-top: 20px;
+}
+* body .content main .playlist .genre .chill:hover {
+  background-color: rgba(255, 168, 7, 0.512);
+}
+* body .content main .playlist .genre .chill:hover h5 {
+  color: white;
+  cursor: pointer;
+}
+* body .content main .playlist .genre .pop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 150px;
+  border-radius: 3%;
+  background-color: rgb(59, 4, 104);
+  margin-top: 20px;
+}
+* body .content main .playlist .genre .pop:hover {
+  background-color: rgba(59, 4, 104, 0.452);
+}
+* body .content main .playlist .genre .pop:hover h5 {
+  color: white;
+  cursor: pointer;
+}
+* body .content main .playlist .genre .hiphop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 150px;
+  border-radius: 3%;
+  background-color: rgba(240, 0, 68, 0.316);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+* body .content main .playlist .genre .hiphop:hover {
+  background-color: rgba(240, 0, 68, 0.097);
+}
+* body .content main .playlist .genre .hiphop:hover h5 {
+  color: white;
+  cursor: pointer;
+}
+* body .content main .playlist .top-songs {
+  margin-left: 30px;
+  margin-top: 15px;
+  border-radius: 3%;
+  width: 650px;
+  height: 500px;
+  margin-bottom: 10px;
+  background-color: rgba(66, 61, 73, 0.437);
+}
+* body .content main .playlist .top-songs .top-songs-title {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 2%;
+}
+* body .content main .playlist .top-songs .top-songs-title h5 {
+  padding-top: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+* body .content main .playlist .top-songs .trending-song1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+* body .content main .playlist .top-songs .trending-song1 .song1-cover img {
+  width: 100px;
+  height: 70px;
+  border-radius: 10%;
+}
+* body .content main .playlist .top-songs .trending-song1 .song1-title {
+  padding: 10px;
+  margin-right: auto;
+}
+* body .content main .playlist .top-songs .trending-song1 .song1-title h3 {
+  color: white;
+  font-size: medium;
+}
+* body .content main .playlist .top-songs .trending-song1 .song1-title h5 {
+  font-size: smaller;
+}
+* body .content main .playlist .top-songs .song1-control {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  margin-top: 10px;
+}
+* body .content main .playlist .top-songs .song1-control i {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+* body .content main .playlist .top-songs .song1-control a {
+  color: rgb(181, 175, 175);
+}
+* body .content main .playlist .top-songs .song1-control a:hover {
+  color: rgb(255, 255, 255);
+}
+* body .content main .playlist .top-songs .song1-control h4 {
+  color: rgb(181, 175, 175);
+}
+* body .content main .playlist .trending-song1:hover {
+  background-color: rgba(66, 61, 73, 0.637);
+  cursor: pointer;
+}
+* body .content .right-section .right-menu {
+  display: flex;
+  margin-top: 5px;
+}
+* body .content .right-section .right-menu .right-menu-list {
+  margin-top: 10px;
+  margin-left: 60%;
+  color: white;
+}
+* body .content .right-section .right-menu .right-menu-list a {
+  color: white;
+  margin-left: 10px;
+}
+* body .content .right-section .right-menu .profile-image img {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 50px;
+  border-radius: 20%;
+}
+* body .content .right-section .right-menu .profile-image:hover {
+  cursor: pointer;
+}
+* body .content .right-section .player {
+  margin-top: 20%;
+  margin-left: 60px;
+  width: 80%;
+  height: 500px;
+  border-radius: 1%;
+  background-color: rgba(26, 24, 29, 0.459);
+  border: 1px solid rgba(255, 255, 255, 0.278);
+}
+* body .content .right-section .player .player-title {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(181, 175, 175);
+  margin-left: 20px;
+}
+* body .content .right-section .player .player-title p {
+  padding-top: 20px;
+}
+* body .content .right-section .player .player-title i {
+  margin-right: 10px;
+  padding-top: 15px;
+}
+* body .content .right-section .player .music-photo {
+  display: flex;
+  justify-content: center;
+}
+* body .content .right-section .player .music-photo img {
+  margin-top: 20px;
+  width: 70%;
+  height: 50%;
+  border-radius: 10px;
+}
+* body .content .right-section .player .song-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  color: rgb(181, 175, 175);
+}
+* body .content .right-section .player .song-artist {
+  display: flex;
+  justify-content: center;
+  color: rgb(181, 175, 175);
+}
+* body .content .right-section .player .song-info {
+  display: flex;
+  justify-content: center;
+}
+* body .content .right-section .player .song-info input {
+  width: 70%;
+}
+* body .content .right-section .player .song-control {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+* body .content .right-section .player .song-control i {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+* body .content .right-section .player .song-control a {
+  color: rgb(181, 175, 175);
+}
+* body .content .right-section .player .song-control a:hover {
+  color: rgb(255, 255, 255);
+}/*# sourceMappingURL=style.css.map */
