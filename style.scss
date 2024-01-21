@@ -18,10 +18,10 @@ body{
         .sidebar{
             height: 100%;
             .menu{
-                background-color: rgb(26, 24, 29);
+                background-color: rgba(66, 61, 73, 0.203);
                 width: 100%;
-                height: 100%; // Setați înălțimea dorită aici
-                border-radius: 10px;
+                height: 100%; 
+               
                 
                 .menu-title{
                    
@@ -44,7 +44,7 @@ body{
                     }  
                    
                     a{
-                        color: rgb(94, 78, 124);
+                        color: rgb(233, 230, 239);
                         transform: all ease 2s;
                     }
                     a:hover{
@@ -53,6 +53,37 @@ body{
                         transform: all ease 2s;
                     }
                 }
+
+                .social-section{
+                    .social-title
+                    {
+                        margin-top: 30px;
+                        margin-left: 10px;
+                    }
+                    .social{
+                        display: flex;
+                        justify-content: space-between;
+                        
+                        margin-top: 20px;
+                        margin-left: 10px;
+                        i{
+                         
+                            margin-right: 5px;
+                        }
+                        a{
+                            color: rgb(233, 230, 239);
+                            transform: all ease 2s;
+                        }
+                        a:hover{
+                            text-decoration: none;
+                            color: rgb(36, 36, 49);
+                            transform: all ease 2s;
+                        }
+                    }
+
+                }
+
+
             }
         }
         main{
@@ -368,7 +399,7 @@ body{
                 margin-top: 20%;
                 margin-left: 60px;
                 width: 80%;
-                height: 500px;
+                height: auto;
                 border-radius: 1%;
                 background-color: rgba(26, 24, 29, 0.459);
                 border: 1px solid rgba(255, 255, 255, 0.278);
@@ -413,17 +444,26 @@ body{
                         
                     }
                 }
+                .time{
+                    display: flex;
+                    justify-content: center;
+                    color:rgb(181, 175, 175);
+                    padding: 10px;
+                   
+                }
                 .song-info{
                     display: flex;
                     justify-content: center;
                     input{
                         width: 70%;
                     }
+
                 }
                 .song-control{
                     display: flex;
                     justify-content: center;
                     margin-top: 10px;
+                    padding: 10px;
                     i{
                         margin-left: 10px;
                         margin-right: 10px;
